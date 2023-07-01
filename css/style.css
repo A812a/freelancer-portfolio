@@ -1,0 +1,438 @@
+*
+{
+    box-sizing: border-box;
+}
+:root
+{
+    --main-color: #0078ff;
+}
+body
+{
+    color: #4e4e4e;
+    background-color: #eee;
+}
+/* start main */
+.parg-main
+{
+    position: relative;
+    margin-bottom: 60px;
+}
+.parg-main::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+    width: 40px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+.icon-circle
+{
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover .icon-circle
+{
+    border: 10px solid #ddd;
+    background-color: var(--main-color);
+}
+.icon-circle i
+{
+   font-size: 50px;
+   color: black;
+   transition: 0.5s;
+}
+.card:hover .icon-circle i
+{
+    color: white;
+}
+/* end main */
+nav .nav-link 
+{
+    font-size: 18px;
+    margin:  0 8px;
+    color: #fff;
+    position: relative;
+}
+.icon-fixed
+{
+    width: 3rem;
+    height: 3rem;
+}
+nav .nav-link::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+} 
+nav .nav-link:hover::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+} 
+header
+{
+    background-image: url(./../DevFoli-Img/intro-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+header .layer
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+header .layer h1
+{
+    font-size: 4rem;
+}
+header p.pargraph-main::after
+{
+    font-size: 30px;
+    content: " ";
+    position: relative;
+    animation:  parg 10s linear infinite alternate;
+}
+@keyframes parg
+{
+    0%{content:" |"}
+    1%{content:"  F|"}
+    2%{content:"  Fr|"}
+    3%{content:"  Fre|"}
+    4%{content:"  Free|"}
+    5%{content:"  Free |"}
+    6%{content:"  Free L|"}
+    7%{content:"  Free La|"}
+    8%{content:"  Free Lan|"}
+    9%{content:"  Free Lanc|"}
+    10%{content:"  Free Lance|"}
+    11%{content:"  Free Lancer|"}
+    12%{content:"  Free Lance|"}
+    13%{content:"  Free Lanc|"}
+    14%{content:"  Free Lan|"}
+    15%{content:"  Free La|"}
+    16%{content:"  Free L|"}
+    17%{content:"  Free |"}
+    18%{content:"  Free|"}
+    19%{content:"  Fre|"}
+    20%{content:"  Fr|"}
+    21%{content:"  F|"}
+    22%{content:"  |"}
+    23%{content:"  D|"}
+    24%{content:"  De|"}
+    25%{content:"  Des|"}
+    26%{content:"  Desi|"}
+    27%{content:"  Desig|"}
+    28%{content:"  Design|"}
+    29%{content:"  Designe|"}
+    30%{content:"  Designer|"}
+    31%{content:"  Designe|"}
+    32%{content:"  Design|"}
+    33%{content:"  Desig|"}
+    34%{content:"  Desi|"}
+    35%{content:"  Des|"}
+    36%{content:"  De|"}
+    37%{content:"  D|"}
+    38%{content:"  |"}
+    39%{content:"  P|"}
+    40%{content:"  Ph|"}
+    41%{content:"  Pho|"}
+    42%{content:"  Phot|"}
+    43%{content:"  Photo|"}
+    44%{content:"  Photo |"}
+    45%{content:"  Photo g|"}
+    46%{content:"  Photo gr|"}
+    47%{content:"  Photo gra|"}
+    48%{content:"  Photo grap|"}
+    49%{content:"  Photo graph|"}
+    50%{content:"  Photo graphe|"}
+    51%{content:"  Photo grapher|"}
+    52%{content:"  Photo graphe|"}
+    53%{content:"  Photo graph|"}
+    54%{content:"  Photo grap|"}
+    55%{content:"  Photo gra|"}
+    56%{content:"  Photo gr|"}
+    57%{content:"  Photo g|"}
+    58%{content:"  Photo |"}
+    59%{content:"  Photo|"}
+    60%{content:"  Phot|"}
+    61%{content:"  Pho|"}
+    62%{content:"  Ph|"}
+    63%{content:"  P|"}
+    64%{content:"  |"}
+    65%{content:"  S|"}
+    66%{content:"  Si|"}
+    67%{content:"  Sim|"}
+    68%{content:"  Simo|"}
+    69%{content:"  simon|"}
+    70%{content:"  simone|"}
+    71%{content:"  simone |"}
+    72%{content:"  simone O|"}
+    73%{content:"  simone Ol|"}
+    74%{content:"  simone Oli|"}
+    75%{content:"  simone Oliv|"}
+    76%{content:"  simone Olivi|"}
+    77%{content:"  simone Olivia|"}
+    78%{content:"  simone Olivi|"}
+    79%{content:"  simone Oliv|"}
+    80%{content:"  simone Oli|"}
+    81%{content:"  simone Ol|"}
+    82%{content:"  simone O|"}
+    83%{content:"  simone |"}
+    84%{content:"  simone|"}
+    85%{content:"  simon|"}
+    86%{content:"  simo|"}
+    87%{content:"  sim|"}
+    88%{content:"  si|"}
+    89%{content:"  s|"}
+    90%{content:"  |"}
+    91%{content:"  |"}
+    92%{content:"  |"}
+    93%{content:"  |"}
+    94%{content:"  |"}
+    95%{content:"  |"}
+    96%{content:"  |"}
+    97%{content:"  |"}
+    98%{content:"  |"}
+    99%{content:"  |"}
+    100%{content:"  |"}
+
+}
+@media (max-width: 700px)
+{
+    header .layer h1
+{
+    font-size: 2rem;
+}
+}
+/* start about */
+#about h2
+{
+    margin-bottom: 70px;
+    position: relative;
+}
+#about h2::before
+{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+#about .contented p
+{
+    font-size: 21px;
+    font-weight: 300;
+}
+/* end about */
+/* start services */
+#services .parg-crad
+{
+    font-size: 15px;
+}
+/* end services */
+/* start layer-bg */
+#count
+{
+    background-image: url(./../DevFoli-Img/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#count .content
+{
+    background-color: rgba(0, 130, 255, 0.6);
+    height: 75vh;
+    background-size: cover;
+    margin-bottom: 70px;
+    color: white;
+}
+@media (max-width:577px)
+{
+    #count .content
+    {
+        height: 100vh;
+    }
+}
+#count .content .i-c-w
+{
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    border: 8px solid white;
+    border-radius: 50%;
+}
+#count .content .i-c-w i
+{
+    font-size: 30px;
+}
+/* end layer-bg */
+/* start work */
+#work .plass 
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#work .card figure img
+{
+    transition: 0.5s;
+}
+#work .card:hover figure img
+{
+    transform: scale(1.2,1.2);
+}
+/* end work */
+/* start layer-bag */
+#layer-bag
+{
+    background-image: url(./../DevFoli-Img/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#layer-bag .bag-blue
+{
+    background-color: var(--main-color);
+    opacity: 0.6;
+    height: 50vh;
+    background-size: cover;
+    margin-bottom: 70px;
+    color: white;
+}
+/* end layer-bag */
+/* start blog */
+#blog .card .figure
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#blog .card .figure img
+{
+    width: 40px;
+}
+#blog .card .figure a
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+#blog .card .figure a:hover
+{
+    color: var(--main-color);
+}
+#blog .card .bttn
+{
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#blog .card-blog h5
+{
+    font-size: 19px;
+    transition: 0.5s;
+    color: black;
+}
+#blog .card-blog h5:hover
+{
+    color: var(--main-color);
+}
+#blog .card-blog p
+{
+    font-size: 18px;
+}
+#blog .card-blog .btn
+{
+    width: 80px;
+    height: 40px;
+    padding: 0;
+}
+/* end blog */
+/* start contact */
+#contact
+{
+    background-image: url(./../DevFoli-Img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#contact .content
+{
+    background-color: rgba(0, 130, 255, 0.6);
+    z-index: 3;
+    padding-top: 50px;
+}
+#contact h2
+{
+    margin-bottom: 70px;
+    position: relative;
+}
+#contact h2::before
+{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+#contact input
+{
+    border: 1px solid #777;
+}
+#contact .main
+{
+    font-size: 18px;
+    line-height: 2;
+}
+#contact .icon
+{
+    width: 60px;
+    height: 60px;
+    border: 4px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+#contact .icon:hover
+{
+    background-color: #0078ff;
+    border: 4px solid #ccc;
+}
+#contact .icon i
+{
+    font-size: 30px;
+    transition: 0.5s;
+}
+#contact .icon:hover i
+{
+    color: white;
+}
+/* end contact */
